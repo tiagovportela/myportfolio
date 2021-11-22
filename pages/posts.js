@@ -3,8 +3,10 @@ import { Container, Heading, SimpleGrid, Divider } from '@chakra-ui/react'
 import Section from '../compoments/section'
 import { PostsGridItem } from '../compoments/grid-item'
 import thumbStrokeClass from '../public/images/stroke_classification.png'
+import Layout from '../compoments/layouts/article'
 const Posts = () => {
     return (
+        <Layout>
         <Container>
             <Heading as ="h3" fontSize={20} mb ={4}>
                 Posts
@@ -13,7 +15,7 @@ const Posts = () => {
                 <Section>
                     <PostsGridItem 
                     id="StrokeClassification" 
-                    title="Stroke Classification"
+                    title="Stroke Classification of Elite Paddlers"
                     thumbnail = {thumbStrokeClass}
                     >
                         Classfication of elite paddlers strokes
@@ -23,7 +25,7 @@ const Posts = () => {
                 <Section>
                     <PostsGridItem 
                     id="StrokeClassification" 
-                    title="Stroke Classification"
+                    title="Stroke Classification of Elite Paddlers"
                     thumbnail = {thumbStrokeClass}
                     >
                         Classfication of elite paddlers strokes
@@ -33,7 +35,7 @@ const Posts = () => {
                 <Section>
                     <PostsGridItem 
                     id="StrokeClassification" 
-                    title="Stroke Classification"
+                    title="Stroke Classification of Elite Paddlers"
                     thumbnail = {thumbStrokeClass}
                     >
                         Classfication of elite paddlers strokes
@@ -82,6 +84,7 @@ const Posts = () => {
 
             </SimpleGrid>
         </Container>
+        </Layout>
     )
 }
 export default Posts
