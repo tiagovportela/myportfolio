@@ -15,7 +15,7 @@ import {
   useColorModeValue
 } from '@chakra-ui/react'
 import { HamburgerIcon } from '@chakra-ui/icons'
-// import ThemeToggleButton from './theme-toggle-button'
+import ThemeToggleButton from './theme-toggle-button'
 // import { IoLogoGithub } from 'react-icons/io5'
 
 const LinkItem = ({ href, path, _target, children, ...props }) => {
@@ -71,9 +71,9 @@ const Navbar = props => {
           flexGrow={1}
           mt={{ base: 4, md: 0 }}
         >
-          <LinkItem href="/works" path={path}>
+          {/* <LinkItem href="/works" path={path}>
             Works
-          </LinkItem>
+          </LinkItem> */}
           <LinkItem href="/posts" path={path}>
             Posts
           </LinkItem>
@@ -92,7 +92,7 @@ const Navbar = props => {
         </Stack>
 
         <Box flex={1} align="right">
-          {/* <ThemeToggleButton /> */}
+          <ThemeToggleButton />
 
           <Box ml={2} display={{ base: 'inline-block', md: 'none' }}>
             <Menu isLazy id="navbar-menu">
@@ -106,9 +106,9 @@ const Navbar = props => {
                 <NextLink href="/" passHref>
                   <MenuItem as={Link}>About</MenuItem>
                 </NextLink>
-                <NextLink href="/works" passHref>
+                {/* <NextLink href="/works" passHref>
                   <MenuItem as={Link}>Works</MenuItem>
-                </NextLink>
+                </NextLink> */}
                 <NextLink href="/posts" passHref>
                   <MenuItem as={Link}>Posts</MenuItem>
                 </NextLink>

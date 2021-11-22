@@ -8,7 +8,7 @@ export default class Documents extends NextDocument {
             <Html lang ="en">
                 <Head/>
                 <body>
-                    <ColorModeScript initialColorMode={theme.config.initialColorMode}></ColorModeScript>
+                    <ColorModeScript initialColorMode={theme.config.initialColorMode}/>
                     <Main></Main>
                     <NextScript />
                 </body>
