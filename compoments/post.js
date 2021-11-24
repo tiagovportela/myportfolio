@@ -1,5 +1,5 @@
 import NextLink from 'next/link'
-import { Heading, Box, Image, Link, Badge } from '@chakra-ui/react'
+import { Heading, Box, Image, Link, Badge, Code } from '@chakra-ui/react'
 import { ChevronRightIcon } from '@chakra-ui/icons'
 
 export const Title = ({ children }) => (
@@ -11,7 +11,7 @@ export const Title = ({ children }) => (
       {' '}
       <ChevronRightIcon />{' '}
     </span>
-    <Heading display="inline-block" as="h3" fontSize={20} mb={4}>
+    <Heading display="inline-block" as="h2" fontSize={30} mb={4}>
       {children}
     </Heading>
   </Box>
@@ -19,8 +19,8 @@ export const Title = ({ children }) => (
 
 export const PostImage = ({ src, alt, legend }) => (
 <Box mb={4}>
-    <Image borderRadius="lg" w="full" src={src} alt={alt} mb={0} />
-    <p>{legend}</p>
+    <Image borderRadius="lg" w="full" src={src} alt={alt} mb={1}  />
+    <p><i>{legend}</i></p>
 </Box>
 )
 
@@ -31,8 +31,14 @@ export const Meta = ({ children }) => (
 )
 export const Subtitle = ({children}) => (
     <Box>
-        <Heading display="inline-block" as="h3" fontSize={17} mb={4}>
+        <Heading display="inline-block" as="h3" fontSize={20} mb={2} mt={2}>
         {children}
         </Heading>
     </Box>
+)
+
+export const PostCode = ({children}) => (
+    <Code alignContent="center" mb={3} mt={3}>
+            {children}
+    </Code>
 )

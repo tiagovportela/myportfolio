@@ -2,7 +2,7 @@
 import { Container, Heading, SimpleGrid, Divider } from '@chakra-ui/react'
 import Section from '../compoments/section'
 import { PostsGridItem } from '../compoments/grid-item'
-import thumbStrokeClass from '../public/images/stroke_classification.png'
+import thumbStrokeClass from '../public/images/posts/StrokeClassification/stroke.jpeg'
 import Layout from '../compoments/layouts/article'
 const Posts = () => {
     return (

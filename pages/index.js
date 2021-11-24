@@ -6,10 +6,10 @@ const Page = () => {
     return (
         <Layout>
         <Container>
-            <Box borderRadius="lg" bg={useColorModeValue("whiteAlpha.500", "whiteAlpha.200")} p={3} mb={6} align="center">
+            {/* <Box borderRadius="lg" bg={useColorModeValue("whiteAlpha.500", "whiteAlpha.200")} p={3} mb={6} align="center">
                 Hello, I'm a motion analyst and product developer @Nelo
-            </Box>
-            <Box display ={{md:'flex'}}>
+            </Box> */}
+            <Box display ={{md:'flex'}} mt={7}>
                 <Box flexGrow={1}>
                     <Heading as="h2" variant="page-title">
                         Tiago Portela
