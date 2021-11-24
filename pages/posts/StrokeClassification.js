@@ -36,6 +36,7 @@ import {
 
                     To mitigate this problem, a form of classification of the strokes is necessary so that it is possible to verify if in a series (exercise), there was a similar number of good strokes so that the comparison is fair.
                 </Text>
+                <PostImage src="/images/posts/StrokeClassification/reference_frame.png" alt="DAS Reference Frame" legend="Fig1 - DAS Reference Frame"/>
                 <Text fontSize="md">
 
                     For this task I developed a data acquisition system (DAS), which consists of an inertial sensor (IMU) and a web server, plus an Android application that allows recording and synchronizing video frames with DAS data. 

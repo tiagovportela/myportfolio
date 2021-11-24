@@ -18,7 +18,7 @@ export const Title = ({ children }) => (
 )
 
 export const PostImage = ({ src, alt, legend }) => (
-<Box mb={4}>
+<Box mb={4} mt={2}>
     <Image borderRadius="lg" w="full" src={src} alt={alt} mb={1}  />
     <p><i>{legend}</i></p>
 </Box>
