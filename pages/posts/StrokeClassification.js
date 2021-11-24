@@ -4,17 +4,11 @@ import {
     Link,
     List,
     ListItem,
-    Code,
-    Stack,
-    Center,
-    Image, 
     Text
   } from '@chakra-ui/react'
-  import NextLink from 'next/link'
   import Layout from '../../compoments/layouts/article' 
   import { ExternalLinkIcon } from '@chakra-ui/icons'
   import { Title, PostImage, Meta, Subtitle, PostCode } from '../../compoments/post'
-  import ReactMarkdown from 'react-markdown'
 
 //   import P from '../../components/paragraph'
   
@@ -26,7 +20,7 @@ import {
                 Stroke Classification of Elite Paddlers <Badge>2018-2019</Badge>
                 </Title>
                 
-                <Text fontSize="md">Development of a method to classify elite rowers' strokes.</Text>
+                <Text fontSize="md">Development of a method to classify elite rowers&apos; strokes.</Text>
                 <List ml={4} my={4}>
                     <ListItem>
                         <Meta>Stack</Meta>
@@ -38,7 +32,7 @@ import {
                     Stroke Fases Division
                 </Subtitle>
                 
-                <Text fontSize="md">"Canoe paddle strokes are the means by which a paddle (or paddles) is used to move a canoe through the water."</Text>
+                <Text fontSize="md">&quot;Canoe paddle strokes are the means by which a paddle (or paddles) is used to move a canoe through the water.&quot;;</Text>
 
                 <Text fontSize="md">For this study, it is important to divide the stroke into its various components or phases.</Text>
                 <Text fontSize="md">From the observation of the movement of the <i>boat-paddle-athlete</i> system, we can divide the different phases according to the image below:</Text>
@@ -60,7 +54,7 @@ import {
                 from scipy module
                 </Text>
 
-                <Text fontSize="md">This function takes a 1-D array and finds all local maxima by simple comparison of neighboring values. Optionally, a subset of these peaks can be selected by specifying conditions for a peak's properties.</Text>
+                <Text fontSize="md">This function takes a 1-D array and finds all local maxima by simple comparison of neighboring values. Optionally, a subset of these peaks can be selected by specifying conditions for a peak&apos;s properties.</Text>
                 <Text fontSize="md">Since it is humanly impossible for a stroke to see shorter than 0.3 seconds, we can specify the distance parameter as 30 - Since the sample frequency is of 100 Hz, 0.3 seconds corresponds to 30 points.</Text>
 
                 <Text fontSize="md">

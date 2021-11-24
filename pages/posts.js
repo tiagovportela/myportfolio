@@ -1,5 +1,5 @@
 
-import { Container, Heading, SimpleGrid, Divider } from '@chakra-ui/react'
+import { Container, Heading, SimpleGrid } from '@chakra-ui/react'
 import Section from '../compoments/section'
 import { PostsGridItem } from '../compoments/grid-item'
 import thumbStrokeClass from '../public/images/posts/StrokeClassification/stroke.jpeg'

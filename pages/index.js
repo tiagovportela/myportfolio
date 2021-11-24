@@ -1,4 +1,4 @@
-import { Container, Box, Heading, Image, useColorModeValue } from "@chakra-ui/react"
+import { Container, Box, Heading, Image } from "@chakra-ui/react"
 import Section from "../compoments/section"
 import Paragraph from "../compoments/paragraph"
 import Layout from "../compoments/layouts/article"
@@ -38,7 +38,7 @@ const Page = () => {
                     My Self
                 </Heading>
                 <Paragraph>
-                    I'm a developer with a great passion for data science and IoT.
+                    I&apos;m a developer with a great passion for data science and IoT.
                 </Paragraph>
             </Section>
             <Section delay={0.1}>
@@ -46,7 +46,7 @@ const Page = () => {
                 After hours
                 </Heading>
                 <Paragraph>
-                    I'm a developer with a great passion for data science and IoT.
+                    I&apos;m a developer with a great passion for data science and IoT.
                 </Paragraph>
             </Section>
         </Container>
