@@ -9,8 +9,8 @@ import {
   import Layout from '../../compoments/layouts/article' 
   import { ExternalLinkIcon } from '@chakra-ui/icons'
   import { Title, PostImage, Meta, Subtitle, PostCode } from '../../compoments/post'
-
-//   import P from '../../components/paragraph'
+ 
+//   import ReactEmbedGist from 'react-embed-gist';
   
   const Post = () => {
       return (
@@ -28,6 +28,22 @@ import {
                     </ListItem>
                     
                 </List>
+
+                <Text fontSize="md">
+                    One of the most important challenges in the competitive Kayak production industry is figuring out whether one new model performs better than the other. This task is not trivial, as it is not always clear how to measure performance, as well as how to repeat tests under similar conditions.
+                </Text>
+                <Text fontSize="md">
+
+                    To mitigate this problem, a form of classification of the strokes is necessary so that it is possible to verify if in a series (exercise), there was a similar number of good strokes so that the comparison is fair.
+                </Text>
+                <Text fontSize="md">
+
+                    For this task I developed a data acquisition system (DAS), which consists of an inertial sensor (IMU) and a web server, plus an Android application that allows recording and synchronizing video frames with DAS data. 
+                </Text>
+
+                <PostImage src="/images/posts/StrokeClassification/das_signal_rotations.jpeg" alt="Rotation Signal" legend="Fig1 - Rotation Signals"/>
+                <PostImage src="/images/posts/StrokeClassification/das_signal_translation.jpeg" alt="Translation Signal" legend="Fig1 - Translation Signals"/>
+
                 <Subtitle>
                     Stroke Fases Division
                 </Subtitle>
@@ -56,7 +72,8 @@ import {
 
                 <Text fontSize="md">This function takes a 1-D array and finds all local maxima by simple comparison of neighboring values. Optionally, a subset of these peaks can be selected by specifying conditions for a peak&apos;s properties.</Text>
                 <Text fontSize="md">Since it is humanly impossible for a stroke to see shorter than 0.3 seconds, we can specify the distance parameter as 30 - Since the sample frequency is of 100 Hz, 0.3 seconds corresponds to 30 points.</Text>
-
+                {/* <ReactEmbedGist gist="tiagoportelanelo/056208599a145077c995e9387c6aac85"/> */}
+                
                 <Text fontSize="md">
                     <PostCode>
                     <p>peaks, _ = find_peaks(start_data.ax, distance=30)</p>
