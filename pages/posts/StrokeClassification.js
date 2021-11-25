@@ -41,7 +41,7 @@ import {
                 </PostParagraph>
                 
                 <PostParagraph>
-                If the environmental variables are easy to verify, the athlete's performance proves to be an arduous task. Thus, a systematic method of evaluating the athlete&apos;s performance is imperative.
+                If the environmental variables are easy to verify, the athlete&apos;s performance proves to be an arduous task. Thus, a systematic method of evaluating the athlete&apos;s performance is imperative.
                 </PostParagraph>
 
                 <PostParagraph>
