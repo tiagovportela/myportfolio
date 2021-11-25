@@ -37,15 +37,15 @@ import {
                 </PostParagraph>
                 
                 <PostParagraph>
-                Ideally, the metric that best represents boat performance is speed, but it is not always possible to guarantee similar conditions between tests, as there are many variables to consider - for example, water current, wind direction and speed, and athlete's performance .
+                Ideally, the metric that best represents boat performance is speed, but it is not always possible to guarantee similar conditions between tests, as there are many variables to consider - for example, water current, wind direction and speed, and athlete&apos;s performance .
                 </PostParagraph>
                 
                 <PostParagraph>
-                If the environmental variables are easy to verify, the athlete's performance proves to be an arduous task. Thus, a systematic method of evaluating the athlete's performance is imperative.
+                If the environmental variables are easy to verify, the athlete's performance proves to be an arduous task. Thus, a systematic method of evaluating the athlete&apos;s performance is imperative.
                 </PostParagraph>
 
                 <PostParagraph>
-                To mitigate this problem a form of classification of the athlete's strokes was developed. In this way, it is possible to verify if in a series (exercise), there was a similar number of good strokes.
+                To mitigate this problem a form of classification of the athlete&apos;s strokes was developed. In this way, it is possible to verify if in a series (exercise), there was a similar number of good strokes.
                 </PostParagraph>
 
                 <PostParagraph>
