@@ -1,5 +1,5 @@
 import NextLink from 'next/link'
-import { Heading, Box, Image, Link, Badge, Code } from '@chakra-ui/react'
+import { Heading, Box, Image, Link, Badge, Code, Text } from '@chakra-ui/react'
 import { ChevronRightIcon } from '@chakra-ui/icons'
 
 export const Title = ({ children }) => (
@@ -41,4 +41,13 @@ export const PostCode = ({children}) => (
     <Code alignContent="center" mb={3} mt={3}>
             {children}
     </Code>
+)
+
+export const PostParagraph = ({children}) => (
+  <Box mb={5}>
+    <Text fontSize="md" >
+      {children}
+    </Text>
+  </Box>
+  
 )

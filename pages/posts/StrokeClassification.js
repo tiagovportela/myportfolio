@@ -8,7 +8,7 @@ import {
   } from '@chakra-ui/react'
   import Layout from '../../compoments/layouts/article' 
   import { ExternalLinkIcon } from '@chakra-ui/icons'
-  import { Title, PostImage, Meta, Subtitle, PostCode } from '../../compoments/post'
+  import { Title, PostImage, Meta, Subtitle, PostCode, PostParagraph } from '../../compoments/post'
  
 //   import ReactEmbedGist from 'react-embed-gist';
   
@@ -19,8 +19,11 @@ import {
                 <Title>
                 Stroke Classification of Elite Paddlers <Badge>2018-2019</Badge>
                 </Title>
-                
-                <Text fontSize="md">Development of a method to classify elite rowers&apos; strokes.</Text>
+                <PostParagraph>
+                    Development of a method to classify elite rowers&apos; strokes.
+                </PostParagraph>
+                {/* <Text fontSize="md">Development of a method to classify elite rowers&apos; strokes.</Text> */}
+
                 <List ml={4} my={4}>
                     <ListItem>
                         <Meta>Stack</Meta>
@@ -28,19 +31,32 @@ import {
                     </ListItem>
                     
                 </List>
+                
+                <PostParagraph>
+                One of the most important challenges in the competitive Kayaks production industry is figuring out whether a new model performs better and where it can be improved. This task is not trivial, as it is not always clear how to measure performance as well as ensure that tests are performed under similar conditions.
+                </PostParagraph>
+                
+                <PostParagraph>
+                Ideally, the metric that best represents boat performance is speed, but it is not always possible to guarantee similar conditions between tests, as there are many variables to consider - for example, water current, wind direction and speed, and athlete's performance .
+                </PostParagraph>
+                
+                <PostParagraph>
+                If the environmental variables are easy to verify, the athlete's performance proves to be an arduous task. Thus, a systematic method of evaluating the athlete's performance is imperative.
+                </PostParagraph>
 
-                <Text fontSize="md">
-                    One of the most important challenges in the competitive Kayak production industry is figuring out whether one new model performs better than the other. This task is not trivial, as it is not always clear how to measure performance, as well as how to repeat tests under similar conditions.
-                </Text>
-                <Text fontSize="md">
+                <PostParagraph>
+                To mitigate this problem a form of classification of the athlete's strokes was developed. In this way, it is possible to verify if in a series (exercise), there was a similar number of good strokes.
+                </PostParagraph>
 
-                    To mitigate this problem, a form of classification of the strokes is necessary so that it is possible to verify if in a series (exercise), there was a similar number of good strokes so that the comparison is fair.
-                </Text>
+                <PostParagraph>
+                For this task, we used a data acquisition system (DAS) consisting of an inertial sensor (IMU) and a web server, plus an Android application, which allows recording and synchronizing video frames with DAS data.
+                </PostParagraph>
+
                 <PostImage src="/images/posts/StrokeClassification/reference_frame.png" alt="DAS Reference Frame" legend="Fig1 - DAS Reference Frame"/>
-                <Text fontSize="md">
 
-                    For this task I developed a data acquisition system (DAS), which consists of an inertial sensor (IMU) and a web server, plus an Android application that allows recording and synchronizing video frames with DAS data. 
-                </Text>
+                <PostParagraph>
+                Com isto, foram coletados vários dados durante uma sessão de treino.
+                </PostParagraph>
 
                 <PostImage src="/images/posts/StrokeClassification/das_signal_rotations.jpeg" alt="Rotation Signal" legend="Fig1 - Rotation Signals"/>
                 <PostImage src="/images/posts/StrokeClassification/das_signal_translation.jpeg" alt="Translation Signal" legend="Fig1 - Translation Signals"/>
