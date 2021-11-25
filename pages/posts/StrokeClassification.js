@@ -3,11 +3,13 @@ import {
     Badge,
     Link,
     List,
+    Box,
+    ListIcon,
     ListItem,
     Text
   } from '@chakra-ui/react'
   import Layout from '../../compoments/layouts/article' 
-  import { ExternalLinkIcon } from '@chakra-ui/icons'
+  import { ExternalLinkIcon, ChevronRightIcon, WarningIcon } from '@chakra-ui/icons'
   import { Title, PostImage, Meta, Subtitle, PostCode, PostParagraph } from '../../compoments/post'
  
 //   import ReactEmbedGist from 'react-embed-gist';
@@ -55,8 +57,54 @@ import {
                 <PostImage src="/images/posts/StrokeClassification/reference_frame.png" alt="DAS Reference Frame" legend="Fig1 - DAS Reference Frame"/>
 
                 <PostParagraph>
-                Com isto, foram coletados vários dados durante uma sessão de treino.
+                After collecting the data, 3 datasets were chosen that meet the following requirements.
+                    <Box ml={5}>
+                        <List >
+                            <ListItem >
+                                <ChevronRightIcon/>
+                                Same environmental conditions.
+                            </ListItem>
+                            <ListItem>
+                                <ChevronRightIcon/>
+                                Same training routine.
+                            </ListItem>
+                            <ListItem>
+                                <ChevronRightIcon/>
+                                Equal speed
+                            </ListItem>
+                        </List>
+                    </Box>
                 </PostParagraph>
+
+               
+                
+                <Subtitle>
+                Roadmap
+                </Subtitle>
+                <Box ml={5} mb={3} >
+                        <List spacing={2}>
+                            <ListItem>
+                                <ListIcon as={WarningIcon} />
+                                Find the starting point of the stroke
+                            </ListItem>
+                            <ListItem>
+                                <ListIcon as={WarningIcon} />
+                                Divide the stroke into its various phases
+                            </ListItem>
+                            <ListItem>
+                                <ListIcon as={WarningIcon} />
+                                Calculate the indicators for each of the phases
+                            </ListItem>
+                            <ListItem>
+                                <ListIcon as={WarningIcon} />
+                                Divide strokes into groups based on indicators 
+                            </ListItem>
+                        </List>
+                    </Box>
+
+                 {/* --------------- */}
+                {/* Signal analysis */}
+                {/* --------------- */}
 
                 <PostImage src="/images/posts/StrokeClassification/das_signal_rotations.jpeg" alt="Rotation Signal" legend="Fig1 - Rotation Signals"/>
                 <PostImage src="/images/posts/StrokeClassification/das_signal_translation.jpeg" alt="Translation Signal" legend="Fig1 - Translation Signals"/>
@@ -89,7 +137,8 @@ import {
 
                 <Text fontSize="md">This function takes a 1-D array and finds all local maxima by simple comparison of neighboring values. Optionally, a subset of these peaks can be selected by specifying conditions for a peak&apos;s properties.</Text>
                 <Text fontSize="md">Since it is humanly impossible for a stroke to see shorter than 0.3 seconds, we can specify the distance parameter as 30 - Since the sample frequency is of 100 Hz, 0.3 seconds corresponds to 30 points.</Text>
-                {/* <ReactEmbedGist gist="tiagoportelanelo/056208599a145077c995e9387c6aac85"/> */}
+
+                
                 
                 <Text fontSize="md">
                     <PostCode>

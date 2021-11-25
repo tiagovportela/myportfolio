@@ -11,7 +11,7 @@ export const Title = ({ children }) => (
       {' '}
       <ChevronRightIcon />{' '}
     </span>
-    <Heading display="inline-block" as="h2" fontSize={30} mb={4}>
+    <Heading display="inline-block" as="h2" fontSize={35} mb={4}>
       {children}
     </Heading>
   </Box>
@@ -31,7 +31,7 @@ export const Meta = ({ children }) => (
 )
 export const Subtitle = ({children}) => (
     <Box>
-        <Heading display="inline-block" as="h3" fontSize={20} mb={2} mt={2}>
+        <Heading display="inline-block" as="h3" fontSize={28} mb={2} mt={2}>
         {children}
         </Heading>
     </Box>
